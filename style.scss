@@ -7,9 +7,33 @@
 }
 
 :root {
-  --dark-color: #000;
+  background-image: linear-gradient(pink, violet, rgba(255,0,255,0.3));
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: #6868AC;
 }
 
+nav {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 13rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #ff6262, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;
+}
 body {
   display: flex;
   align-items: flex-end;
@@ -156,7 +180,7 @@ body {
       transform: translate(-50%, -100%);
       width: 8vmin;
       height: 8vmin;
-      background-color: #6bf0ff;
+      background-color: #d04bd4;
       filter: blur(10vmin);
     }
   }
@@ -168,8 +192,8 @@ body {
     width: 8vmin;
     height: 11vmin;
     border-radius: 51% 49% 47% 53% / 44% 45% 55% 69%;
-    background-color: #a7ffee;
-    background-image: linear-gradient(to top, #54b8aa, #a7ffee);
+    background-color: #c923c1;
+    background-image: linear-gradient(to top, #fa2500, #b420da);
     transform-origin: bottom center;
     opacity: 0.9;
     box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
@@ -192,7 +216,7 @@ body {
       transform-origin: bottom left;
       border-radius: 4vmin 10vmin 4vmin 4vmin;
       transform: translate(-0%, 18%) rotateX(70deg) rotate(-43deg);
-      background-image: linear-gradient(to top, #39c6d6, #a7ffee);
+      background-image: linear-gradient(to top, #e25ee2, #a7ffee);
       z-index: 1;
       opacity: 0.8;
     }
@@ -330,13 +354,13 @@ body {
     width: 1.5vmin;
     background-image: linear-gradient(
         to left,
-        rgb(0, 0, 0, 0.2),
+        rgb(0, 0,  0.2),
         transparent,
         rgba(255, 255, 255, 0.2)
       ),
-      linear-gradient(to top, transparent 10%, #14757a, #39c6d6);
+      linear-gradient(to top, transparent 10%, #e64992, #e669e6);
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
-    animation: grow-flower-tree 4s backwards;
+    animation: grow-flower-tree 10s backwards;
 
     &__leaf {
       --w: 7vmin;
@@ -405,7 +429,7 @@ body {
     animation: light-ans 4s linear infinite backwards;
 
     &:nth-child(odd) {
-      background-color: #23f0ff;
+      background-color: #da23ff;
     }
 
     &--1 {
@@ -450,7 +474,7 @@ body {
   }
 
   &__grass {
-    --c: #159faa;
+    --c: #f332e9;
     --line-w: 1.5vmin;
 
     position: absolute;
@@ -637,7 +661,7 @@ body {
   &__g-long {
     --w: 2vmin;
     --h: 6vmin;
-    --c: #159faa;
+    --c: #aa15aa;
     position: absolute;
     bottom: 10vmin;
     left: -3vmin;
@@ -689,7 +713,7 @@ body {
       width: 30vmin;
       height: 50vmin;
       border-top-left-radius: 100%;
-      border-left: 2vmin solid #079097;
+      border-left: 2vmin solid #f1ff32;
       background-image: linear-gradient(
         to bottom,
         transparent,
@@ -762,7 +786,7 @@ body {
       background-image: linear-gradient(
         to top,
         transparent,
-        #079097,
+        #971807,
         transparent 100%
       );
       position: relative;
